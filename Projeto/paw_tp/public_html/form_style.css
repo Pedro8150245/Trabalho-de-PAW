@@ -6,6 +6,11 @@ and open the template in the editor.
 /* 
     Created on : May 24, 2018, 4:00:02 PM
     Author     : Shingetsu
+	dados:
+● Nome
+● Idade
+● Género
+● Morada
 */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
@@ -28,7 +33,7 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: #4CAF50;
+  background: #2998E6;
 }
 
 .container {
@@ -109,7 +114,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #4CAF50;
+  background: #545556;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -117,7 +122,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
+  background: #33729F;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
