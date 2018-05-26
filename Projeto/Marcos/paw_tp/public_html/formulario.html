@@ -13,31 +13,36 @@ and open the template in the editor.
         <link href="form_style.css" rel="stylesheet" type="text/css"/> 
    </head>
 <div class="container">  
-  <form id="contact" action="" method="post">
-    <h3>mEdIcArE</h3>
-    <h4>cReAtEd By Dj_c4tto, Sh1ng3tsu pussy sl43r, xxXAGUA PLENOXxx</h4>
+  <form id="contact" action="page2.html" method="post">
+    <h3>MedCare</h3>
+    <h4>Zona de rececao</h4>
     <fieldset>
       <input placeholder="Nome" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-		  <input type="number" placeholder="Idade" name="idade" min="1" max="120">
+		  <input type="number" placeholder="Idade" name="idade" min="1" max="120" required autofocus>
     </fieldset>
     <fieldset>
-		  <input class="radio" type="radio" name="gender" value="Homem" checked> Homem<br>
-		  <input class="radio" type="radio" name="gender" value="Mulher"> Mulher<br>
-		  <input class="radio" type="radio" name="gender" value="Esqueleto" checked> Esqueleto<br>
-		  <input class="radio" type="radio" name="gender" value="Apache"> Apache Helicopter<br>
-		  <input class="radio" type="radio" name="gender" value="Tumblr"> Tumblr Unknown Gender<br>
-		  <input class="radio" type="radio" name="gender" value="gato"> Gato<br>		  
+		  <input class="radio" type="radio" name="gender" value="Homem" checked required autofocus> Homem<br>
+		  <input class="radio" type="radio" name="gender" value="Mulher"> Mulher<br>  
 		  <input class="radio" type="radio" name="gender" value="Outro"> Outro 
     </fieldset>
     <fieldset>
       <input placeholder="Morada" type="address" tabindex="4" required>
     </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submeter</button>
+	<fieldset>
+		<input name ="button "type="button" value="Gerar cod. processo" onclick="msg()">
+		<script>
+			function msg() {
+				alert("Hello world!");
+				alert(Math.floor((Math.random() * 10000) + 1));
+			}
+		</script>
     </fieldset>
-    <p class="copyright">Bem vindo a nossa clinica MediCare.</a></p>
+    <fieldset>
+		<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submeter</button>	  
+    </fieldset>
+    <p class="copyright">Bem vindo a nossa clinica MedCare.</a></p>
   </form>
 </div>
 </html>
