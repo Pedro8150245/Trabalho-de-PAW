@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MedCare | Exames</title>
+    </head>
+    <body class="hold-transition register-page">     
+        <img src="https://www.facipe.edu.br/wp-content/uploads/2017/06/total-care-exames.jpg" alt="" class="img-responsive"/>
+
+        <h1>Exames</h1>
+        <form action=".." method="post"> <!-- preencher aqui a parte do PHP para guardar os dados -->
+
+			<p>
+                        <input type="radio" class="form-control" name="estado" value="Verde" checked> Verde
+						<input type="radio" class="form-control" name="estado" value="Amarelo"> Amarelo
+						<input type="radio" class="form-control" name="estado" value="Vermelho"> Vermelho
+						
+			</p>
+			
+            <p>
+                <input type="text" class="form-control" name="exames" placeholder="Tipo de Exames" required>
+                <!-- fazer uma seleção para cada tipo ou deixamos assim? -->
+            </p>
+             <p>
+                <input type="text" class="form-control" name="descExames" placeholder="Descrição dos exames" required>
+            </p>
+
+            <button type="submit">Submeter a exames</button>
+            
+        </form>
+		<p>
+        <a href="register.html" class="text-center">Inicio</a>
+		</p>
+	</body>
+</html>

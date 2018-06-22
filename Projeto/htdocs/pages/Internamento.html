@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MedCare | Internamento</title>
+    </head>
+    <body class="hold-transition register-page">     
+        <img src="https://www.hospitalveterinario.pt/t.php?src=/site/uploads/servicos/imagens/5238DBAC-67CF0_1.png&w=315&h=315&zc=3" alt="" class="img-responsive"/>
+
+        <h1>Internamento</h1>
+        <form action=".." method="post"> <!-- preencher aqui a parte do PHP para guardar os dados -->
+
+            <p>
+                <input type="text" class="form-control" name="tipoInt" placeholder="Tipo de internamento" required>
+            </p>
+            <p>
+                <input type="text" class="form-control" name="sintomas" placeholder="Descrição dos sintomas do doente" required>
+            </p>
+             <p>
+                <input type="text" class="form-control" name="tratamento" placeholder="Tratamento que terá de realizar" required>
+            </p>
+              <p>
+                <input type="number" class="form-control" name="duração" min="1" placeholder="Quanto tempo estará internado?" required>
+            </p>
+
+            <button type="submit">Submeter a internamento</button>
+
+        </form>
+        <a href="register.html" class="text-center">Inicio</a>
+    </body>
+</html>

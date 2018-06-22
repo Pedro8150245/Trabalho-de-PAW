@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MedCare | Consultas</title>
+    </head>
+    <body class="hold-transition register-page">     
+        <img src="https://proantibioticos.files.wordpress.com/2016/08/consulta-img.png" alt="" class="img-responsive"/>
+
+        <h1>Consulta</h1>
+        <form action=".." method="post"> <!-- preencher aqui a parte do PHP para guardar os dados -->
+		
+			
+
+            <p>
+                <input type="text" class="form-control" name="sintomas" placeholder="Descrição dos sintomas" required>
+                <!-- aumentar a caixa de texto! para isso usamos CSS? -->
+            </p>
+             <p>
+                <input type="text" class="form-control" name="tratamento" placeholder="Tratamento que terá de realizar" required>
+                <!-- aumentar a caixa de texto! para isso usamos CSS? -->
+            </p>
+
+            <p>
+                <input type="radio" class="form-control" name="resultados" value="terminado" checked> Fim da consulta
+                <input type="radio" class="form-control" name="resultados" value="exames"> Proceder a exames
+                <input type="radio" class="form-control" name="resultados" value="internado"> Proceder a internamento
+            </p>
+            <button type="submit">Submeter resultados</button>
+            
+            <!-- fiz um script(JS) para tentarem perceber a minha ideia -->
+            <script onclick="submit">
+                if (resutaldos === terminado) {
+                    <a href="login.html" class="text-center">Ja tem uma conta?</a>
+                } else if (resutaldos === exames) {
+                    <a href="exames.html" class="text-center">Terá de efetuar exames</a>
+                } else {
+                    <a href="internamento.html" class="text-center">Terá de ser internado</a>
+                }
+            </script>
+            
+        </form>
+    </body>
+</html>

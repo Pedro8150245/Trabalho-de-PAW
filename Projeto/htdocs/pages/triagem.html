@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MedCare | Triagem</title>
+        
+    </head>
+    <body>     
+                <img src="../dist/img/triagem.png"/>
+
+					<h1></h1>
+                <form action="../dist/php/traigem.php" method="post">
+
+						
+						<p>
+                        <input type="radio" class="form-control" name="estado" value="Verde" checked> Verde
+						<input type="radio" class="form-control" name="estado" value="Amarelo"> Amarelo
+						<input type="radio" class="form-control" name="estado" value="Vermelho"> Vermelho
+						
+						</p>
+						
+						<p>
+						<input type="radio" class="form-control" name="estado" value="DontKnow"> Não é possivel determinar o seu estado
+						</p>
+						
+						
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Enviar estado</button>
+ 
+                </form>
+     </body>
+</html>

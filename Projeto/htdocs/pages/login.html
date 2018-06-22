@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Autenticação de utentes</title>
+    </head>
+    <body>
+        
+                <img src="../dist/img/logo.png"/>
+                    <h1>Autenticação de utentes</h1>
+					
+                <p class="login-box-msg">Entre as suas credenciais para iniciar a sessão</p>
+
+                <form action="../dist/php/login.php" method="post">
+                <p>    
+				<input type="email" class="form-control" name="utilizador" placeholder="Email" required>
+                </p>        
+                  
+				<p>  
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                </p>        
+                   
+				<p>   
+                <label><input type="checkbox"> Relembra-me</label>
+                </p>
+				
+                <button type="submit" class="btn btn-primary btn-block btn-flat">Log In</button>
+                        
+                </form>
+				<p>
+                <a href="forg_pass.php">Esqueceu-se da password?</a><br>
+                <a href="register.html" class="text-center">Ainda não tem registo?</a>
+				</p>
+    </body>
+</html>

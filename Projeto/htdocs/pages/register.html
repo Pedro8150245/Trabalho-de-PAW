@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MedCare | Registo</title>
+        
+    </head>
+    <body class="hold-transition register-page">     
+                <img src="../dist/img/reg.png" alt="" class="img-responsive"/>
+                    
+					<h1>Registo</h1>
+                <form action="../dist/php/regist.php" method="post">
+
+						<p>
+                        <input type="text" class="form-control" name="nome" placeholder="Nome Completo" required>
+						</p>
+                    
+						<p>
+                        <input type="radio" class="form-control" name="gender" value="male" checked> Male
+						<input type="radio" class="form-control" name="gender" value="female"> Female
+						<input type="radio" class="form-control" name="gender" value="other"> Other
+						</p>
+						
+						<p>
+						<input type="date" class="form-control" name="bday" placeholder="Data de nascimento" required>
+						</p>
+					
+						<p>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+						</p>
+					
+						<p>
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+						</p>
+					
+						<p>
+                        <input type="password" class="form-control" name="password2" placeholder="Repetir password" required>
+						</p>
+					
+						<p>
+                        <input type="text" class="form-control" name="pergunta" placeholder="Pergunta para recuperação de password" required>
+						</p>
+					
+						<p>
+                        <input type="password" class="form-control" name="resposta" placeholder="Resposta" required>
+						</p>
+						
+						<p>
+                        <input type="checkbox"> Eu aceito os <a href="#">termos</a>
+						</p>
+						
+                        <button type="submit">Registar</button>
+ 
+                </form>
+                <a href="login.html" class="text-center">Ja tem uma conta?</a>
+     </body>
+</html>
